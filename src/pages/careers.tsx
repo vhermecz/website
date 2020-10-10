@@ -148,6 +148,7 @@ Our mission is to make software development fun and remove all tedious friction.
             }
         ],
         textAfterTheLists: 'We celebrate diversity, and we are committed to an equal and inclusive employment environment.',
+        date: '2020-10-07T19:00:00.000Z',
         rendered: true
     },
 ]
