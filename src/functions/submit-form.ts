@@ -26,7 +26,16 @@ async function sendEmail(client: client.MailService, email: Email): Promise<{sta
                 type: "text/plain",
                 value: email.message
             }
-        ]
+        ],
+        tracking_settings: {
+            click_tracking: {
+                enable: false,
+                enable_text: false
+            },
+            open_tracking: {
+                enable: false
+            }
+        }
     }
     try {
         await client.send(data);
