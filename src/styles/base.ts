@@ -287,9 +287,12 @@ export default `
             }
         }
 
-        &--disabled {
-            opacity: .7;
+        &--disabled,
+        &:disabled {
+            color: ${colors.white};
+            background: ${colors.offWhite4};
             pointer-events: none;
+            border-color: ${colors.offWhite4};
         }
     }
 
