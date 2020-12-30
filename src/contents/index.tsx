@@ -1,10 +1,6 @@
 import React from 'react'
 
 import { FeatureCardProps } from '../components/FeatureCard'
-
-import Collaboration from '../resources/collaboration-placeholder.png'
-import KubernetesGraphics from '../resources/cloud-native.png'
-import IPad from '../resources/ipad.png'
 import FullAutomationGraphics from '../components/features/FullAutomationGraphics'
 import FullAutomationButtons from '../components/features/FullAutomationButtons'
 import BenHalpern from '../resources/ben-halpern.jpg'
@@ -25,6 +21,7 @@ import Roku from '../resources/roku.jpg'
 import { TestimonialProps } from '../components/index/Testimonial'
 
 import { Link } from 'gatsby'
+import ImageProvider from '../components/ImageProvider'
 
 export const features: FeatureCardProps[] = [
     {
@@ -52,8 +49,7 @@ export const features: FeatureCardProps[] = [
   },
   {
     id: 'teams-together',
-    src: Collaboration,
-    alt: 'A code review within Gitpod',
+    gatsbyImage: <ImageProvider isNotRelativeToGatsbyImgWrapper={true} fileName='collaboration-placeholder.png' alt="Collaboration" />,
     title: (
       <strong>
         Where Teams
@@ -83,34 +79,33 @@ export const features: FeatureCardProps[] = [
                         <br />
             Share a reproducible workspace with your team.
           </div>
-                </li>
-            </ul>
-        )
-    },
-    {
-        src: IPad,
-        alt: 'Gitpod on an iPad',
-        title: <strong>Remote-first. Secure by Design.</strong>,
-        text: (
-            <>
-                <p>
-                    You no longer need an over-powered laptop to code, Gitpod works just as smoothly on a Chromebook or iPad. All you need is a
-                    browser.
+        </li>
+      </ul>
+    )
+  },
+  {
+    gatsbyImage: <ImageProvider isNotRelativeToGatsbyImgWrapper={true} fileName='ipad.png' alt="Gitpod on an iPad" />,
+    title: <strong>Remote-first. Secure by Design.</strong>,
+    text: (
+      <>
+        <p>
+          You no longer need an over-powered laptop to code, Gitpod works just as smoothly on a Chromebook or iPad. All you need is a
+          browser.
         </p>
-                <p>Gitpod centralizes all source code and never stores it on insecure machines and networks.</p>
-            </>
-        )
-    },
-    {
-        src: KubernetesGraphics,
-        alt: 'Kubernetes',
-        title: <strong>Cloud Native Development Done Right</strong>,
-        text: (
-            <>
-                <p>Gitpod is a multi-service Kubernetes application that we develop in Gitpod.</p>
-                <p>
-                    Code, build, debug and run K8s applications entirely in the cloud. Get fully-baked workspaces for every branch and pull/merge
-                    request, pre-configured and pre-connected to their own dedicated K8s deployment.
+        <p>Gitpod centralizes all source code and never stores it on insecure machines and networks.</p>
+      </>
+    )
+  },
+  {
+      gatsbyImage: <ImageProvider isNotRelativeToGatsbyImgWrapper={true} fileName="kubernetes-graphic.png" alt="Kubernetes" />,
+    alt: '',
+    title: <strong>Cloud Native Development Done Right</strong>,
+    text: (
+      <>
+        <p>Gitpod is a multi-service Kubernetes application that we develop in Gitpod.</p>
+        <p>
+          Code, build, debug and run K8s applications entirely in the cloud. Get fully-baked workspaces for every branch and pull/merge
+          request, pre-configured and pre-connected to their own dedicated K8s deployment.
         </p>
             </>
         )

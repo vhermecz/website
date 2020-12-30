@@ -81,7 +81,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         margin: ${({ isTitleOutside }) => (isTitleOutside ? '-7rem 0 6rem' : '')}
     }
 
-    img, object {
+    img, object, .g-image {
         display: inline-block;
         margin: 3rem 0 1rem;
         height: 8rem;
@@ -92,6 +92,13 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         @media(max-width: ${sizes.breakpoints.md}) {
             margin: 1.5rem 0 1rem;
         }
+    }
+
+    .g-image {
+        position: relative;
+        width: 7rem;
+        height: 7rem;        
+        margin: 0 0 5rem;
     }
 
     .price {
@@ -241,7 +248,8 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
 
 export interface PricingBoxProps {
   title: string
-  img: JSX.Element
+  img?: HTMLImageElement
+  gatsbyImage?: JSX.Element
   price?: string | JSX.Element
   duration?: string
   feature?: string | JSX.Element
@@ -286,7 +294,8 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
   info,
   areFeaturesBold,
   boldFeaturesCount = 0,
-  perUserMonth
+  perUserMonth,
+  gatsbyImage
 }) => (
   <StyledPricingBox
     transform={transform}
@@ -299,6 +308,7 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
   >
     <h4>{title}</h4>
     {img ? img : null}
+    {gatsbyImage ? <div className="g-image">{gatsbyImage}</div> : null}
     {price ? <div className="price">{price}</div> : null}
     { perUserMonth ? <div className="duration" style={{fontWeight: 400}}>per user/month</div> : null }
     {duration ? <div className="duration">{duration}</div> : null}
