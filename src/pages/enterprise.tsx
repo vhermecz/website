@@ -26,11 +26,11 @@ const EnterprisePage: React.SFC<{}> = () => (
 
         <Banner
             subtitle="Gitpod Enterprise"
-            title={<h1>Unleash Developer Productivity</h1>}
+            title={<>Unleash Developer Productivity</>}
             paragraph="Adding Gitpod to your development tools means less waiting, faster onboarding, faster development cycles, higher code quality, and a smooth consistent workflow."
             linkPath="/enterprise/#enterprise"
             linkText="Choose your Solution"
-            img={<object role="presentation" tabIndex={-1} data={Planet} />}
+            img={<object tabIndex={-1} data={Planet} />}
         />
 
         <div className="grey-container">

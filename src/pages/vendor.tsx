@@ -23,10 +23,10 @@ const VendorPage: React.SFC<{}> = () => (
 
             <Banner
                 subtitle="Gitpod Vendor"
-                title={<h1>Use <strong>Gitpod as a Showroom</strong> for<br /> Your Developer Products</h1>}
+                title={<>Use <strong>Gitpod as a Showroom</strong> for<br /> Your Developer Products</>}
                 linkPath="/vendor/#vendor"
                 linkText="Choose your Solution"
-                img={<object role="presentation" tabIndex={-1} data={Vendor}/>}
+                img={<object tabIndex={-1} data={Vendor}/>}
             />
 
             <div className="grey-container">

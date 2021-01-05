@@ -63,7 +63,7 @@ const Intro = () => (
   <div className="row">
     <Styled>
       <section className="intro pattern">
-        <object role="presentation" tabIndex={-1} data={IceStick} className="ice-stick" />
+        <object tabIndex={-1} data={IceStick} className="ice-stick" />
         <h1>Features</h1>
         <div className="features">
           {features.map((f, i) => (

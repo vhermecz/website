@@ -27,6 +27,10 @@ const StyledBanner = styled.header`
     text-align: center;
   }
 
+  .sub {
+      display: block;
+  }
+
   .para {
     margin-top: 3rem;
 
@@ -76,10 +80,10 @@ const Banner: React.SFC<BannerProps> = ({ subtitle, title, paragraph, linkPath, 
   <div className="row pattern">
     <StyledBanner role="banner" className="banner">
       <div className="banner__text">
-        <header>
-            <p className="sub h3">{subtitle}</p>
+        <h1>
+            <span className="sub h3">{subtitle}</span>
             {title}
-        </header>
+        </h1>
         {paragraph ? <p className="para">{paragraph}</p> : null}
         {link(linkPath, linkText, '', true, false)}
         {children}

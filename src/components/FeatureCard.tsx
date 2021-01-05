@@ -43,7 +43,7 @@ const Styled = styled.div<{
 
   &:nth-of-type(2n) {
     @media (min-width: 1141px) {
-      flex-direction: ${({ opposite }) => (opposite ? 'reverse' : 'row-reverse')};
+      flex-direction: ${({ opposite }) => (opposite ? 'row' : 'row-reverse')};
     }
 
     @media (min-width: 1141px) {

@@ -52,7 +52,7 @@ const selfHostedPlans: PricingBoxProps[] = [
   {
     title: 'Free',
     duration: 'Unlimited users',
-    img: <object role="presentation" tabIndex={-1} data={Cloud} />,
+    img: <object tabIndex={-1} data={Cloud} />,
     features: ['Unlimited Use', 'Private & Public Repos'],
     price: (
       <>
@@ -84,7 +84,7 @@ const selfHostedPlans: PricingBoxProps[] = [
 const plans: PricingBoxProps[] = [
   {
     title: 'Free',
-    img: <object role="presentation" tabIndex={-1} data={IconOpenSource} />,
+    img: <object tabIndex={-1} data={IconOpenSource} />,
     price: (
       <>
         {isEurope() ? '€0' : '$0'}
@@ -95,7 +95,7 @@ const plans: PricingBoxProps[] = [
   },
   {
     title: 'Personal',
-    img: <object role="presentation" tabIndex={-1} data={LightBulb} />,
+    img: <object tabIndex={-1} data={LightBulb} />,
     price: (
       <>
         {isEurope() ? '€8' : '$9'}
@@ -145,7 +145,7 @@ const plans: PricingBoxProps[] = [
   },
   {
     title: 'Unlimited',
-    img: <object role="presentation" tabIndex={-1} data={MagicCap} />,
+    img: <object tabIndex={-1} data={MagicCap} />,
     price: (
       <>
         {isEurope() ? '€35' : '$39'}
@@ -278,7 +278,7 @@ const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
               ))}
             </div>
             <div className={`pricing__boxes ${isRendered ? 'show' : 'hide'}`}>
-              <object role="presentation" tabIndex={-1} data={Cloud} className="cloud-img cloud-img--1" />
+              <object tabIndex={-1} data={Cloud} className="cloud-img cloud-img--1" />
               {selfHostedPlans.map((plan, i) => (
                 <PricingBox 
                     key={i} 
@@ -287,7 +287,7 @@ const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
                     headingLevel="h2"
                 />
               ))}
-              <object role="presentation" tabIndex={-1} data={Cloud} className="cloud-img cloud-img--2" />
+              <object tabIndex={-1} data={Cloud} className="cloud-img cloud-img--2" />
             </div>
           </div>
           <p>

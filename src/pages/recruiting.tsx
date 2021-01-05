@@ -23,10 +23,10 @@ const RecrutingPage: React.SFC<{}> = () => (
 
             <Banner
                 subtitle="Gitpod Recruiting"
-                title={<h1>Make Sure You’re <strong>Discovering Your<br />Best Applicants</strong></h1>}
+                title={<>Make Sure You’re <strong>Discovering Your<br />Best Applicants</strong></>}
                 linkPath="/recruiting/#recruiting"
                 linkText="Choose your Solution"
-                img={<object role="presentation" tabIndex={-1} data={Recruiting}/>}
+                img={<object tabIndex={-1} data={Recruiting}/>}
             />
 
             <div className="grey-container">

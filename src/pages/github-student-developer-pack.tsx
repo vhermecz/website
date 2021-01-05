@@ -18,7 +18,7 @@ import Offers from '../components/Offers'
 const offers: PricingBoxProps[] = [
     {
         title: 'Open-Source',
-        img: <object role="presentation" tabIndex={-1} data={IconOpenSource} />,
+        img: <object tabIndex={-1} data={IconOpenSource} />,
         price: 'Free',
         duration: '50 hours / month',
         hideButton: true,
@@ -27,7 +27,7 @@ const offers: PricingBoxProps[] = [
     },
     {
         title: 'Student',
-        img: <object role="presentation" tabIndex={-1} data={Bag} />,
+        img: <object tabIndex={-1} data={Bag} />,
         price: <><span style={{ textDecoration: 'line-through', opacity: .8 }}>{(isEurope() ? '€8' : '$9')}</span> Free</>,
         duration: '100 hours / month',
         hideButton: true,
@@ -46,7 +46,7 @@ const offers: PricingBoxProps[] = [
     },
     {
         title: 'Student Unlimited',
-        img: <object role="presentation" tabIndex={-1} data={Rocket} />,
+        img: <object tabIndex={-1} data={Rocket} />,
         price: <><span style={{ textDecoration: 'line-through', opacity: .8 }}>{(isEurope() ? '€35' : '$39')}</span> {(isEurope() ? '€8' : '$9')}</>,
         duration: 'Unlimited hours / month',
         hideButton: true,
@@ -59,7 +59,7 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
 
         <Banner
             subtitle="GitHub Student Developer Pack"
-            title={<h1>Make Your Life Easier with Gitpod</h1>}
+            title={<>Make Your Life Easier with Gitpod</>}
             paragraph={<span>With Gitpod you have no more tedious setups, you save hours of compiling code, and you can start coding from any device, immediately.</span>}
             linkPath="https://gitpod.io/subscription/"
             linkText="Claim Offer"

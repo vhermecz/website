@@ -52,7 +52,7 @@ const TextFeature = ({ path, alt, title, text, btnText, href }: TextFeatureProps
     <h3>
       <strong>{title}</strong>
     </h3>
-    <p>{text}</p>
+    <>{text}</>
     {btnText ? (
       <a href={href} target="_blank" className="btn">
         {btnText}
